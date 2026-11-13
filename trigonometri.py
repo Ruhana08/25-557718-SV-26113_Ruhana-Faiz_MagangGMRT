@@ -19,17 +19,3 @@ y = femur * math.sin(servo1) + tibia * math.sin(servo2)
 print("Koordinat End-Effector:")
 print("X =", round(x, 2), "cm")
 print("Y =", round(y, 2), "cm")
-
-# Visualisasi GUI/Plot menggunakan Matplotlib
-x1 = femur * math.cos(servo1)
-y1 = femur * math.sin(servo1)
-plt.plot([0, x1, x], [0, y1, y], marker='o')
-plt.text(x1/2, y1/2, 'Femur')
-plt.text((x1+x)/2, (y1+y)/2, 'Tibia')
-
-plt.grid(True)
-plt.axis('equal')
-plt.xlabel('X (cm)')
-plt.ylabel('Y (cm)')
-plt.title('Visualisasi Kaki Robot 2 DoF')
-plt.show()
