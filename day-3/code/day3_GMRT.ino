@@ -1,3 +1,6 @@
+// Nama  : Ruhana Faiz Restiyanti
+// NIM   : 25/557718/SV/26223
+
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
